@@ -70,6 +70,7 @@ from models.statistics_model import StatisticsModel, StatisticsUnitModel
 from models.updater_model import UpdaterModel
 from models.language_model import LanguageModel
 from models.dds_config_model import DdsConfigModel
+from web_api import ApiBridge, WebApiModel
 from models.config_editor_model.xsd_schema import parse_xsd_schema
 from models.config_editor_model.xsd_tree_model import XsdTreeModel
 from models.config_editor_model.xml_completion_model import XmlCompletionModel
@@ -155,6 +156,10 @@ if __name__ == "__main__":
 
     testerModel = TesterModel(threads, dataModelHandler, datamodelRepoModel)
     datamodelRepoModel.newWriterSignal.connect(testerModel.addWriter)
+    webApiBridge = ApiBridge(listenerModel, testerModel, dataModelHandler)
+    datamodelRepoModel.newSampleArrived.connect(webApiBridge.on_sample)
+    webApiModel = WebApiModel(webApiBridge)
+    app.aboutToQuit.connect(webApiModel.shutdown)
     participantRootItem = ParticipantTreeNode("Root")
     participantModel = ParticipantTreeModel(participantRootItem)
     shapesDemoModel = ShapesDemoModel()
@@ -179,6 +184,7 @@ if __name__ == "__main__":
     engine.rootContext().setContextProperty("datamodelRepoModel", datamodelRepoModel)
     engine.rootContext().setContextProperty("datamodelRepoModelProxy", datamodelRepoModelProxy)
     engine.rootContext().setContextProperty("testerModel", testerModel)
+    engine.rootContext().setContextProperty("webApiModel", webApiModel)
     engine.rootContext().setContextProperty("listenerModel", listenerModel)
     engine.rootContext().setContextProperty("listenerProxyModel", listenerProxyModel)
     engine.rootContext().setContextProperty("receiverModel", receiverModel)

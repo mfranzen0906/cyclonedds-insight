@@ -1314,5 +1314,53 @@
     <message id="node.view.zoom">
         <translation>缩放</translation>
     </message>
+    <message id="settings.web_api.title">
+        <translation>Web API</translation>
+    </message>
+    <message id="settings.web_api.enable">
+        <translation>启用 Web API</translation>
+    </message>
+    <message id="settings.web_api.description">
+        <translation>通过本地 HTTP API 访问 Insight 的读取器和写入器。文档可在以下地址查看。</translation>
+    </message>
+    <message id="settings.web_api.port">
+        <translation>端口</translation>
+    </message>
+    <message id="web_api.subscribe">
+        <translation>订阅</translation>
+    </message>
+    <message id="web_api.disconnect">
+        <translation>断开连接</translation>
+    </message>
+    <message id="web_api.reconnect">
+        <translation>连接中断；正在重新连接…</translation>
+    </message>
+    <message id="web_api.error.port">
+        <translation>Web API 端口必须介于 1 和 65535 之间。</translation>
+    </message>
+    <message id="web_api.error.start">
+        <translation>无法在端口 %1 上启动 Web API：%2</translation>
+    </message>
+    <message id="web_api.openapi.paths">
+        <translation>列出可用的 Insight 端点</translation>
+    </message>
+    <message id="web_api.openapi.endpoints">
+        <translation>端点</translation>
+    </message>
+    <message id="web_api.openapi.live">
+        <translation>%1 的实时样本 (SSE)</translation>
+    </message>
+    <message id="web_api.openapi.events">
+        <translation>服务器发送的事件</translation>
+    </message>
+    <message id="web_api.openapi.write">
+        <translation>将 %1 写入 DDS</translation>
+    </message>
+    <message id="web_api.openapi.queued">
+        <translation>样本已排队等待写入 DDS</translation>
+    </message>
+    <message id="web_api.openapi.invalid">
+        <translation>无效样本</translation>
+    </message>
 </context>
 </TS>

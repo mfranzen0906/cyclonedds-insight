@@ -39,6 +39,7 @@ class DatamodelModel(QAbstractListModel):
         str, str, str, bool, str, str, str, str, str, str, str, str, str, str,
         str, str
     )
+    newSampleArrived = Signal(str, object)
     isLoadingSignal = Signal(bool)
     requestDataType = Signal(str, int, str, str)
     newWriterSignal = Signal(str, int, str, str, object)
@@ -277,6 +278,7 @@ class DatamodelModel(QAbstractListModel):
         else:
             self.threads[domainId] = DispatcherThread(id, domainId, topicName, dataType, qos, entityType)
             self.threads[domainId].onData.connect(self.onData, Qt.ConnectionType.QueuedConnection)
+            self.threads[domainId].onSample.connect(self.newSampleArrived, Qt.ConnectionType.QueuedConnection)
             self.threads[domainId].endpointCreated.connect(self.endpointCreated)
             self.threads[domainId].endpointCreationFailed.connect(self.endpointCreationFailed)
             self.threads[domainId].start()

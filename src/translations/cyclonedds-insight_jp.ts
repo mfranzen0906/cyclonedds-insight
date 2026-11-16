@@ -1314,5 +1314,53 @@
     <message id="node.view.zoom">
         <translation>ズーム</translation>
     </message>
+    <message id="settings.web_api.title">
+        <translation>Web API</translation>
+    </message>
+    <message id="settings.web_api.enable">
+        <translation>Web API を有効にする</translation>
+    </message>
+    <message id="settings.web_api.description">
+        <translation>ローカル HTTP API を使用して Insight のリーダーとライターにアクセスできます。ドキュメントは以下のアドレスで参照できます。</translation>
+    </message>
+    <message id="settings.web_api.port">
+        <translation>ポート</translation>
+    </message>
+    <message id="web_api.subscribe">
+        <translation>購読</translation>
+    </message>
+    <message id="web_api.disconnect">
+        <translation>切断</translation>
+    </message>
+    <message id="web_api.reconnect">
+        <translation>接続が中断されました。再接続しています…</translation>
+    </message>
+    <message id="web_api.error.port">
+        <translation>Web API のポートは 1 から 65535 の範囲で指定してください。</translation>
+    </message>
+    <message id="web_api.error.start">
+        <translation>ポート %1 で Web API を開始できません: %2</translation>
+    </message>
+    <message id="web_api.openapi.paths">
+        <translation>利用可能な Insight エンドポイントを一覧表示</translation>
+    </message>
+    <message id="web_api.openapi.endpoints">
+        <translation>エンドポイント</translation>
+    </message>
+    <message id="web_api.openapi.live">
+        <translation>%1 のライブサンプル (SSE)</translation>
+    </message>
+    <message id="web_api.openapi.events">
+        <translation>サーバー送信イベント</translation>
+    </message>
+    <message id="web_api.openapi.write">
+        <translation>%1 を DDS に書き込む</translation>
+    </message>
+    <message id="web_api.openapi.queued">
+        <translation>DDS 書き込み用にサンプルをキューに追加しました</translation>
+    </message>
+    <message id="web_api.openapi.invalid">
+        <translation>無効なサンプル</translation>
+    </message>
 </context>
 </TS>

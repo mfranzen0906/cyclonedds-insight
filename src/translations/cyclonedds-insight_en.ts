@@ -1314,5 +1314,53 @@
     <message id="node.view.zoom">
         <translation>Zoom</translation>
     </message>
+    <message id="settings.web_api.title">
+        <translation>Web API</translation>
+    </message>
+    <message id="settings.web_api.enable">
+        <translation>Enable Web API</translation>
+    </message>
+    <message id="settings.web_api.description">
+        <translation>Access Insight readers and writers through a local HTTP API. The documentation is available at the address below.</translation>
+    </message>
+    <message id="settings.web_api.port">
+        <translation>Port</translation>
+    </message>
+    <message id="web_api.subscribe">
+        <translation>Subscribe</translation>
+    </message>
+    <message id="web_api.disconnect">
+        <translation>Disconnect</translation>
+    </message>
+    <message id="web_api.reconnect">
+        <translation>Connection interrupted; reconnecting…</translation>
+    </message>
+    <message id="web_api.error.port">
+        <translation>Web API port must be between 1 and 65535.</translation>
+    </message>
+    <message id="web_api.error.start">
+        <translation>Cannot start Web API on port %1: %2</translation>
+    </message>
+    <message id="web_api.openapi.paths">
+        <translation>List available Insight endpoints</translation>
+    </message>
+    <message id="web_api.openapi.endpoints">
+        <translation>Endpoints</translation>
+    </message>
+    <message id="web_api.openapi.live">
+        <translation>Live samples for %1 (SSE)</translation>
+    </message>
+    <message id="web_api.openapi.events">
+        <translation>Server-sent events</translation>
+    </message>
+    <message id="web_api.openapi.write">
+        <translation>Write %1 to DDS</translation>
+    </message>
+    <message id="web_api.openapi.queued">
+        <translation>Sample queued for DDS write</translation>
+    </message>
+    <message id="web_api.openapi.invalid">
+        <translation>Invalid sample</translation>
+    </message>
 </context>
 </TS>

@@ -32,6 +32,7 @@ class DispatcherThread(QThread):
     onData = Signal(
         str, str, str, bool, str, str, str, str, str, int, str, str, str, str
     )
+    onSample = Signal(str, object)
     endpointCreated = Signal(str)
     endpointCreationFailed = Signal(str, str)
 
@@ -225,6 +226,9 @@ class DispatcherThread(QThread):
 
                             for sample in samples:
                                 logging.trace(f"Received sample: {str(sample)}")
+                                self.onSample.emit(
+                                    _id, sample.key_sample if isinstance(sample, InvalidSample) else sample
+                                )
                                 sample_data = (
                                     f"{str(sample.key_sample)}"
                                     if isinstance(sample, InvalidSample)

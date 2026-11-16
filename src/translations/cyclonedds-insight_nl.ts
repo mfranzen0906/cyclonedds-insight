@@ -1314,5 +1314,53 @@
     <message id="node.view.zoom">
         <translation>Zoom</translation>
     </message>
+    <message id="settings.web_api.title">
+        <translation>Web-API</translation>
+    </message>
+    <message id="settings.web_api.enable">
+        <translation>Web-API inschakelen</translation>
+    </message>
+    <message id="settings.web_api.description">
+        <translation>Gebruik Insight-lezers en -schrijvers via een lokale HTTP-API. De documentatie is beschikbaar op het onderstaande adres.</translation>
+    </message>
+    <message id="settings.web_api.port">
+        <translation>Poort</translation>
+    </message>
+    <message id="web_api.subscribe">
+        <translation>Abonneren</translation>
+    </message>
+    <message id="web_api.disconnect">
+        <translation>Verbinding verbreken</translation>
+    </message>
+    <message id="web_api.reconnect">
+        <translation>Verbinding onderbroken; opnieuw verbinden…</translation>
+    </message>
+    <message id="web_api.error.port">
+        <translation>De Web-API-poort moet tussen 1 en 65535 liggen.</translation>
+    </message>
+    <message id="web_api.error.start">
+        <translation>Kan Web-API niet starten op poort %1: %2</translation>
+    </message>
+    <message id="web_api.openapi.paths">
+        <translation>Beschikbare Insight-eindpunten weergeven</translation>
+    </message>
+    <message id="web_api.openapi.endpoints">
+        <translation>Eindpunten</translation>
+    </message>
+    <message id="web_api.openapi.live">
+        <translation>Live monsters voor %1 (SSE)</translation>
+    </message>
+    <message id="web_api.openapi.events">
+        <translation>Door de server verzonden gebeurtenissen</translation>
+    </message>
+    <message id="web_api.openapi.write">
+        <translation>%1 naar DDS schrijven</translation>
+    </message>
+    <message id="web_api.openapi.queued">
+        <translation>Monster in wachtrij voor DDS-schrijfactie</translation>
+    </message>
+    <message id="web_api.openapi.invalid">
+        <translation>Ongeldig monster</translation>
+    </message>
 </context>
 </TS>

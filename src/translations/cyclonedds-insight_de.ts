@@ -1314,5 +1314,53 @@
     <message id="node.view.zoom">
         <translation>Zoom</translation>
     </message>
+    <message id="settings.web_api.title">
+        <translation>Web-API</translation>
+    </message>
+    <message id="settings.web_api.enable">
+        <translation>Web-API aktivieren</translation>
+    </message>
+    <message id="settings.web_api.description">
+        <translation>Über eine lokale HTTP-API auf Insight-Leser und -Schreiber zugreifen. Die Dokumentation ist unter der folgenden Adresse verfügbar.</translation>
+    </message>
+    <message id="settings.web_api.port">
+        <translation>Port</translation>
+    </message>
+    <message id="web_api.subscribe">
+        <translation>Abonnieren</translation>
+    </message>
+    <message id="web_api.disconnect">
+        <translation>Trennen</translation>
+    </message>
+    <message id="web_api.reconnect">
+        <translation>Verbindung unterbrochen; Verbindung wird wiederhergestellt…</translation>
+    </message>
+    <message id="web_api.error.port">
+        <translation>Der Web-API-Port muss zwischen 1 und 65535 liegen.</translation>
+    </message>
+    <message id="web_api.error.start">
+        <translation>Web-API kann auf Port %1 nicht gestartet werden: %2</translation>
+    </message>
+    <message id="web_api.openapi.paths">
+        <translation>Verfügbare Insight-Endpunkte auflisten</translation>
+    </message>
+    <message id="web_api.openapi.endpoints">
+        <translation>Endpunkte</translation>
+    </message>
+    <message id="web_api.openapi.live">
+        <translation>Live-Proben für %1 (SSE)</translation>
+    </message>
+    <message id="web_api.openapi.events">
+        <translation>Servergesendete Ereignisse</translation>
+    </message>
+    <message id="web_api.openapi.write">
+        <translation>%1 in DDS schreiben</translation>
+    </message>
+    <message id="web_api.openapi.queued">
+        <translation>Probe für DDS-Schreibvorgang eingereiht</translation>
+    </message>
+    <message id="web_api.openapi.invalid">
+        <translation>Ungültige Probe</translation>
+    </message>
 </context>
 </TS>

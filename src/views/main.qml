@@ -269,6 +269,13 @@ ApplicationWindow {
     }
 
     Connections {
+        target: webApiModel
+        function onOperationError(message) {
+            rootWindow.showOperationError(message)
+        }
+    }
+
+    Connections {
         target: qmlUtils
         function onOperationError(message) {
             rootWindow.showOperationError(message)

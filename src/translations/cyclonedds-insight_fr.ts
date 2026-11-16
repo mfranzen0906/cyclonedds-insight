@@ -1314,5 +1314,53 @@
     <message id="node.view.zoom">
         <translation>Zoom</translation>
     </message>
+    <message id="settings.web_api.title">
+        <translation>API Web</translation>
+    </message>
+    <message id="settings.web_api.enable">
+        <translation>Activer l’API Web</translation>
+    </message>
+    <message id="settings.web_api.description">
+        <translation>Accédez aux lecteurs et aux écrivains d’Insight via une API HTTP locale. La documentation est disponible à l’adresse ci-dessous.</translation>
+    </message>
+    <message id="settings.web_api.port">
+        <translation>Port</translation>
+    </message>
+    <message id="web_api.subscribe">
+        <translation>S’abonner</translation>
+    </message>
+    <message id="web_api.disconnect">
+        <translation>Se déconnecter</translation>
+    </message>
+    <message id="web_api.reconnect">
+        <translation>Connexion interrompue ; reconnexion en cours…</translation>
+    </message>
+    <message id="web_api.error.port">
+        <translation>Le port de l’API Web doit être compris entre 1 et 65535.</translation>
+    </message>
+    <message id="web_api.error.start">
+        <translation>Impossible de démarrer l’API Web sur le port %1 : %2</translation>
+    </message>
+    <message id="web_api.openapi.paths">
+        <translation>Lister les points de terminaison Insight disponibles</translation>
+    </message>
+    <message id="web_api.openapi.endpoints">
+        <translation>Points de terminaison</translation>
+    </message>
+    <message id="web_api.openapi.live">
+        <translation>Échantillons en direct pour %1 (SSE)</translation>
+    </message>
+    <message id="web_api.openapi.events">
+        <translation>Événements envoyés par le serveur</translation>
+    </message>
+    <message id="web_api.openapi.write">
+        <translation>Écrire %1 dans DDS</translation>
+    </message>
+    <message id="web_api.openapi.queued">
+        <translation>Échantillon mis en file pour l’écriture DDS</translation>
+    </message>
+    <message id="web_api.openapi.invalid">
+        <translation>Échantillon non valide</translation>
+    </message>
 </context>
 </TS>

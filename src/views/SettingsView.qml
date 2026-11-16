@@ -308,6 +308,70 @@ Rectangle {
 
             Rectangle {
                 Layout.fillWidth: true
+                implicitHeight: webApiLayout.implicitHeight + 24
+                radius: Constants.cardRadius
+                color: settingsViewId.surfaceColor
+                border.width: 1
+                border.color: settingsViewId.borderColor
+
+                ColumnLayout {
+                    id: webApiLayout
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+                    anchors.top: parent.top
+                    anchors.margins: 12
+                    spacing: 8
+
+                    RowLayout {
+                        Layout.fillWidth: true
+                        Label {
+                            Layout.fillWidth: true
+                            text: qsTrId("settings.web_api.title")
+                            font.pixelSize: Constants.sectionTitleFontSize
+                            font.bold: true
+                        }
+                        Switch {
+                            text: qsTrId("settings.web_api.enable")
+                            checked: webApiModel.enabled
+                            onClicked: webApiModel.setEnabled(checked)
+                        }
+                    }
+                    Label {
+                        Layout.fillWidth: true
+                        wrapMode: Text.WordWrap
+                        text: qsTrId("settings.web_api.description")
+                        color: settingsViewId.secondaryTextColor
+                    }
+                    RowLayout {
+                        Label {
+                            text: qsTrId("settings.web_api.port")
+                        }
+                        TextField {
+                            id: webApiPort
+                            Layout.preferredWidth: 100
+                            text: String(webApiModel.port)
+                            validator: IntValidator { bottom: 1; top: 65535 }
+                            onEditingFinished: {
+                                if (acceptableInput)
+                                    webApiModel.setPort(Number(text))
+                                else
+                                    text = String(webApiModel.port)
+                            }
+                        }
+                        Label {
+                            Layout.fillWidth: true
+                            text: webApiModel.enabled
+                                  ? "http://127.0.0.1:" + webApiModel.port + "/docs"
+                                  : ""
+                            color: settingsViewId.secondaryTextColor
+                            elide: Text.ElideRight
+                        }
+                    }
+                }
+            }
+
+            Rectangle {
+                Layout.fillWidth: true
                 implicitHeight: domainsLayout.implicitHeight + 24
                 radius: Constants.cardRadius
                 color: settingsViewId.surfaceColor
